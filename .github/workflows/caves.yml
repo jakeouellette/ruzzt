@@ -1,10 +1,8 @@
 name: Generate Caves
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight UTC
 
 env:
   CARGO_TERM_COLOR: always
@@ -20,10 +18,8 @@ jobs:
       run: |
         cd fest_joiner
         cargo build --verbose
-    - name: Run tests
-      run: cargo run
-          mkdir artifacts/
-          cp ../caves/CAVESNEW.ZZT artifacts/
+        mkdir artifacts/
+        cp ../caves/CAVESNEW.ZZT artifacts/
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
