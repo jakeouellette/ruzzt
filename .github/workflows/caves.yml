@@ -20,7 +20,7 @@ jobs:
     - name: Create artifacts directory
       run: mkdir artifacts/
     - name: Copy cave file
-      run: cp ../caves/CAVENEW.ZZT artifacts/ 
+      run: cp $PWD/caves/CAVENEW.ZZT artifacts/ 
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
