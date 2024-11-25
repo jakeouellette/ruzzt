@@ -18,9 +18,9 @@ jobs:
     - name: Generate Caves
       run: |
         cd fest_joiner
-        cargo build --verbose
+        cargo run
         mkdir artifacts/
-        cp ../caves/CAVESNEW.ZZT artifacts/
+        cp ../caves/CAVENEW.ZZT artifacts/
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
