@@ -16,8 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Generate Caves
-      working-directory: ./fest_joiner
-      run: cargo run -- $PWD/../caves
+      run: cargo run --bin fest_joiner $PWD/caves
     - name: Create artifacts directory
       run: mkdir artifacts/
     - name: Copy cave file
