@@ -1,6 +1,6 @@
 mod sound;
 
-use sdl2::image::{LoadTexture, INIT_PNG};
+use sdl2::image::{LoadTexture, InitFlag};
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode;
 use sdl2::rect::Rect;
@@ -8,6 +8,7 @@ use sdl2::render::{WindowCanvas, Texture};
 use sdl2::audio::AudioSpecDesired;
 
 use std::path::Path;
+use std::str::from_utf8;
 use std::time::{SystemTime, UNIX_EPOCH};
 use num::FromPrimitive;
 
@@ -223,7 +224,7 @@ impl ZztConsole {
 		let render_height = 350;
 
 		let sdl_video = sdl_context.video().unwrap();
-		let _sdl_image = sdl2::image::init(INIT_PNG).unwrap();
+		let _sdl_image = sdl2::image::init(InitFlag::PNG).unwrap();
 		let window = sdl_video.window("RUZZT", render_width * scale, render_height * scale)
 			.position_centered()
 			//.fullscreen_desktop()
@@ -278,11 +279,11 @@ impl ZztConsole {
 								_ => {}
 							}
 
-							let shift_held = keymod.contains(sdl2::keyboard::LSHIFTMOD);
+							let shift_held = keymod.contains(sdl2::keyboard::Mod::LSHIFTMOD);
 
 							if in_typing_mode {
-								if keycode as i32 >= 0x20 && keycode as i32 <= 0x7e {
-									let mut char_code = keycode as u8;
+								if keycode.into_i32() >= 0x20 && keycode.into_i32() <= 0x7e {
+									let mut char_code : u8 = u8::from_i32(keycode.into_i32()).expect("Must not be non-char");
 									if shift_held {
 										// Very friendly for non-US keyboards:
 										if char_code >= b'a' && char_code <= b'z' {

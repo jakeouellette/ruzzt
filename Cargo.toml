@@ -5,4 +5,5 @@ members = [
     "zzt_file_format",
     "zzt_to_json",
     "zzt_web_editor",
+    "fest_joiner",
 ]

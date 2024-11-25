@@ -1,0 +1,47 @@
+Original Board	Claimed By	Remixed Board	Added to Drive?	Filename	Completed?	Flags Used?	+RUBE Fun?	Dark Board?	Notes/Comments					
+Introduction Screen	DarkMatt	Cave Title	When we're done		Yes	N/A	Nope.	No	Board will be added to the drive once all of our slots are claimed.					
+Room One	Snorb	Caverns Entrance	Feb 24 2021	ROOMONE.BRD	Yes	+RUBE	Yes???? (Can -RUBE to go back to Normal Mode.)	No	Starting board. Player can turn on easy/RUBE mode from here.					
+Starter Cave	RT-55J	Into the Darkness	Feb 6 2021; updated Nov 15 2024	STARTER.brd	Yes	sets one of: LIONFRIEND, LIONATTACK, or LIONBETRAY	Object gives more ammo	No	Updated April 2, 2021 to add a flag tracking your Moral Choice					
+Crossover Cave	cyborgurl	Centipede Preserve	Apr 6 2021	CENTIPED.BRD	Yes	N/A	No	Yes	Can buy torches at a rate of 2 gems per torch					
+Red Cave	john (farawaytimes)													
+Hell's Maw	Snorb	Hell's Mouth	Jan 8 2021	HELLMAW.BRD	No (Awaiting completion of Engineer Required! and Heaven (Walkway 3) so I can write hints for Amie the Hint Gal.)	Checks for RUBE	One comment from Amie the Hint Gal, get 25 Gems when descending into Hell in Easy Mode.	Yes	Purple Keys go here. TO DO: Fix actual edge overlooking Hell. Will update Amie with more hints PRN.					
+Locked Key	RT-55J	Trick Key	Mar 28 2021; updated on Dec 17, 2021, Nov 8, 2022	TRICKKEY.BRD	Yes	N/A	No	No						
+Castle Exterior	Snorb	Castle of %#^@%!!	Jan 4 2021	CASTLEX.BRD	Yes	Checks for RUBE	Blink and you'll miss it but yeah	No	Two mythology gags and the only kinds of castle I can draw (European, blue)					
+Almost There	RT-55J	Almost a Petting Zoo	Dec 19 2021; updated Nov 24, 2022	PETZOO.BRD	Yes	N/A	No	No	Up to 400 Bonus Points available to super players					
+Engineer Required	Jakeout (kaddar)	Engineering Rewired	Nov 23, 2024	ENGREWIRED.BRD										
+Twisty Cave	KKairos	Wispy Pave	Feb 7 2021	KKAICAV1.BRD		N/A	No	Yes	Gives up to ~325 score if you do everything in the right order. Must be linked east/west to itself.					
+Cave Gates	RT-55J	Z.U.T.S Redux	Jan 16 2021; updated Nov 17 2024	ZUTS.brd	Yes	N/A	No	Yes	Has a couple objects that #give stuff (adjust accordingly)				It's possible to softlock on this board by pushing boulders into the Z.U.T.S's path. Please revise.	Softlock fixed
+House of Mirrors	Newt	House of Mirrors 2021	Feb 5 2021	HOMIRROR.BRD	Yes	Checks for RUBE	Easy mode (bypass most of it)	No	1,000 point scroll in original. If this is excessive, bring it down to 500 points? 300 points?					
+Forest	Snorb	Bip-Bo-Beep	Mar 21 2024	BIPBOBEP.BRD	No	N/A	Nope. Just a cute little walk through the bip-bo-beeps.	No	Missing a key. Bip-bo-beep.					
+Public Transport	DarkMatt	Public Transport	Mar 7 2021	DM-PUTR.BRD	Yes	N/A	Not this time.	No						
+Pac-Man	Alan Smithee	Super Maze Chase Game	It's there. Need to confirm date.	SMCG.BRD	Yes									
+Sucker	cyborgurl	The Sucker National Park	Dec 12, 2021	SUCKER.BRD	Yes	N/A	No							
+Dueling Locks	RT-55J	Graveyard	Jan 12, 2021; updated Nov 17 2024	GRAVE.BRD	Yes	Checks for RUBE	Object gives more health							
+Key Puzzle	DarkMatt	PrismaKey	Mar 29 2021	DM-PRSM.BRD	Yes	N/A	Not this time either.	No						
+Rainbow Road (WalkWay 2)	RT-55J	Rainbow Road	Jan 7 2021	RAINBOW.brd	Needs Music	Checks for RUBE	Easy mode	No	Could use a royalty-free imitation of Rainbow Road music (though I won't be the one to compose it)					
+Heaven (WalkWay 3)	BobPragt	(falling from) Heaven	November 6th, 2024, updated Nov 7th to 9th 2024	FALLING.brd	No		not yet		incomplete - made the dialog less vague and cringe. hopefully added some sense of direction. i like the concept of the first puzzle, the second one is a work in progress, or just a place holder (i like the transporter effect, but that's it). i won't be able to work on this for a while, but any feedback (in channel or DM) would be much appreciated.					
+Hell Landing Point	Alan Smithee	City Dolent	It's there. Need to double check date.	CITYDOLE.BRD	Yes									
+Hell Board 1	authorblues													
+Hell Board 2	DarkMatt	Doomed Base	Jan 4 2021	DM-E1M1.BRD	Yes	Checks for RUBE	Less enemies on easy mode	Yes	Updated with neat tunes.					
+Hell Board 3	cyborgurl	Catch the Devil	8/2/23; updated 8/13	CATCHDVL.BRD	Yes	Checks for RUBE	Devil chase is slower on easy mode							
+Hell Board 4	davidjamesmc	Hellen	Draft up 23Nov24	HELLEN.BRD	No	Checks for RUBE. +EXPANDED (Cleared on completion). +SCORPIOED (Cleared during gameplay)	Pisces gives clearer hints.	No	Uses an ammo-based inventory system (will give 1 ammo if detects a shot)					
+Hell Blue Gates	Snorb	Yomotsu Hirasaka	Jan 11 2021	YOMOTSU.BRD	Yes	N/A	"Read the story on the board! YOU tell ME if it's ""FUN!!!"" ...err, nope."	No	Bring Blue Keys from Hell here.					
+Viper Pit	DarkMatt	Viper Pit	Apr 2 2021	DM-VIPR.BRD	Yes	+BFLAG. (Cleared on completion.) Checks for RUBE	You get condescended if you play on easy does that count? Also it's much easier on easy. I uhh think.	No						
+River Styx														
+Depths of Hell	dave2	Hell Depths	October 29 2024	HELDEPTH.BRD	Yes	Checks for RUBE, LIONFRIEND	"""Bosses"" reveal themselves, final gaunlet is easier."	No	Please test this board for funness, beatability, and other bugs!				Board has been tested. Thanks for the board. ~The Management	
+Devil's Quarters	cyborgurl	The Management	Apr 4 2021	DEVIL-V2.BRD	Yes	Checks for LIONFRIEND, LIONATTACK and LIONBETRAY	Not an action board!	No	Has an instant death, like the original (refusing to challenge the devil). I could be talked into toning this down.					
+End Game	DarkMatt	The New There	When we're done		Yes	None	Nope.	No	Board will be added to the drive once all of our slots are claimed. Has a surprise.					
+					"^ ""Yes"" if it's completed; any other text if needs feedback/testing"									
+Purple background = Purple key on board			Blue background = Blue key on board				Dark boards can be toggled on/off as you need							
+														
+Boards Claimed	31	96.88%												
+Boards Uploaded	27	84.38%												
+---	---	---	Author	Color		Char	Author Avatars:							
+Boards In Development	4	12.50%	cyborgurl	Purple Key		Purple Key (Purple ♀)	Once you submit a board, I need two things from you:							
+Boards Needing Feedback	5	15.63%	RT-55J	Dark Green		158 (₧)	Foreground and background color							
+Boards Completed	22	68.75%	KKairos	yellow		k	Character (Any ANSI. Either the code or the actual symbol will do.)							
+Total Boards	32		Newt	Cyan on Dark Cyan		224 (α)	Thanks in advance: DarkMatt							
+			KinCryos	Cyan on Dark Blue		21 (§)	(If you submitted to Town Remix I could just use your old avatar.)							
+			Snorb	Cyan on Dark Cyan		6 (♠)								
+			DarkMatt	Dark Grey		129 (ü)								
+			Alan Smithee	White		X								
