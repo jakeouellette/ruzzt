@@ -16,8 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Generate Caves
-      run: cd fest_joiner
-    - name: Generate Caves
+      working-directory: ./fest_joiner
       run: | 
         ls
         cargo run
