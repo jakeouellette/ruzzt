@@ -4,7 +4,9 @@ mod tsv_reader;
 use zzt_file_format::{World, Board};
 
 fn main() -> Result<(), Box<dyn Error>>{
-    let root = Path::new("../caves/");
+    let param = std::env::args().nth(1)
+    .ok_or("Missing root path argument")?;
+    let root = Path::new(&param);
     let mapping_file = root.join("mapping.tsv");
     let zzt_in = root.join("CAVEBASE.ZZT");
     let mut input_file = std::fs::File::open(zzt_in).map_err(|e| format!("{:?}", e))?;

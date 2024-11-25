@@ -1,3 +1,6 @@
+Note: this is a clone of the repo from https://github.com/yokljo/ruzzt/. What follows in the
+original text file.
+
 # RUZZT
 
 A clone of the engine for the DOS game "[ZZT](https://en.wikipedia.org/wiki/ZZT)", written in the
