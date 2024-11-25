@@ -1,0 +1,31 @@
+name: Generate Caves
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Generate Caves
+      run: |
+        cd fest_joiner
+        cargo build --verbose
+    - name: Run tests
+      run: cargo run
+          mkdir artifacts/
+          cp ../caves/CAVESNEW.ZZT artifacts/
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: my-artifacts
+        path: artifacts/
