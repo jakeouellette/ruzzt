@@ -4,16 +4,20 @@ mod tsv_reader;
 use zzt_file_format::{World, Board};
 
 fn main() -> Result<(), Box<dyn Error>>{
+    println!("Loading...");
     let param = std::env::args().nth(1)
     .ok_or("Missing root path argument")?;
     let root = Path::new(&param);
+    println!("Loading... {}", &root.to_str().unwrap());
     let mapping_file = root.join("mapping.tsv");
     let zzt_in = root.join("CAVEBASE.ZZT");
+    println!("Loading... {}", &zzt_in.to_str().unwrap());
     let mut input_file = std::fs::File::open(zzt_in).map_err(|e| format!("{:?}", e))?;
+
     let mut world : World = World::parse(&mut input_file).unwrap();
 
     let zzt_out = root.join("CAVENEW.ZZT");
-
+    println!("Targeting... {}", &zzt_out.to_str().unwrap());
 
     let old_to_new_boardnames = tsv_reader::read_tsv(&mapping_file)?;
     let new_boards = get_boards(root, &world).unwrap();
