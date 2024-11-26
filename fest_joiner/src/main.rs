@@ -1,4 +1,4 @@
-use std::{borrow::Borrow, error::Error, fs,fs::File, io, path::Path, collections::HashMap};
+use std::{error::Error, fs,fs::File, io, path::Path, collections::HashMap};
 
 mod tsv_reader;
 use zzt_file_format::{World, Board};
@@ -41,7 +41,7 @@ fn main() -> Result<(), Box<dyn Error>>{
     let mut out_file = File::create(zzt_out).unwrap();
     // let mut output_file = std::fs::File::open(zzt_out).map_err(|e| format!("{:?}", e))?;
 	
-    world.write(&mut out_file);
+    let _ = world.write(&mut out_file);
     
 // tsv_reader::test();
   Ok(())
@@ -49,13 +49,13 @@ fn main() -> Result<(), Box<dyn Error>>{
 
 pub fn get_boards(file_path: &Path, world: &World) -> Result<HashMap<String, Board>, Box<dyn Error>> {
     let brds: Vec<String> = list_files(file_path, "brd").unwrap();
-    let mut brdsByName =  HashMap::new();
+    let mut brds_by_name =  HashMap::new();
     for brd in brds {
         let mut input_file = std::fs::File::open(file_path.join(brd)).map_err(|e| format!("{:?}", e))?;
         let board = Board::parse(&mut input_file, world.world_header.world_type).unwrap();
-        brdsByName.insert(board.meta_data.board_name.to_string(false), board);
+        brds_by_name.insert(board.meta_data.board_name.to_string(false), board);
     }
-    Ok(brdsByName)
+    Ok(brds_by_name)
 }
 
 
