@@ -15,14 +15,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: LS
+      run: ls $PWD/caves
+    - name: unset var
+      run: unset CARGO_TARGET_DIR
+    - name: var
+      run: echo $CARGO_TARGET_DIR
+    - name: build caves
+      run: cargo build --bin fest_joiner
     - name: Generate Caves
-      run: |
-        cd fest_joiner
-        cargo run
+      run: cargo run --bin fest_joiner $PWD/caves
     - name: Create artifacts directory
       run: mkdir artifacts/
     - name: Copy cave file
-      run: cp ../caves/CAVENEW.ZZT artifacts/ 
+      run: cp $PWD/caves/CAVENEW.ZZT artifacts/ 
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
